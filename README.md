@@ -7,6 +7,7 @@ Este repositório contém um exemplo simples de Responsible AI utilizando a bibl
 Este projeto tem como objetivo demonstrar como usar a biblioteca AIF360 para avaliar e mitigar possíveis vieses em um modelo de aprendizado de máquina. O exemplo fornecido segue a abordagem "Hello World" da Responsible AI, usando a base de dados COMPAS.
 
 ## Base de Dados COMPAS
+
 A base de dados COMPAS (Correctional Offender Management Profiling for Alternative Sanctions) contém informações sobre indivíduos envolvidos no sistema judicial dos EUA, incluindo características demográficas, histórico criminal e pontuações de risco. O objetivo é prever o risco de reincidência.
 
 ## Passos do Exemplo
@@ -15,15 +16,17 @@ A base de dados COMPAS (Correctional Offender Management Profiling for Alternati
 
 O exemplo começa com o carregamento da base de dados COMPAS.
 Realiza-se um pré-processamento, incluindo a conversão das variáveis categóricas em numéricas e a normalização das variáveis.
-Treinamento do modelo:
 
-- Um modelo simples de aprendizado supervisionado é treinado para prever a reincidência com base nos dados.
+- Treinamento do modelo:
+
+Um modelo simples de aprendizado supervisionado é treinado para prever a reincidência com base nos dados.
 
 - Avaliação de fairness:
 
 Utilizando a biblioteca AIF360, avaliamos a equidade do modelo, identificando possíveis vieses com relação a diferentes grupos (como raça e gênero).
 Vários indicadores de fairness, como Disparate Impact, Statistical Parity e Equal Opportunity, são calculados.
-Mitigação de viés:
+
+- Mitigação de viés:
 
 Após avaliar os vieses, é possível aplicar técnicas de mitigação (como o Reweighing ou Disparate Impact Removal) para melhorar a equidade do modelo.
 
@@ -31,9 +34,9 @@ Após avaliar os vieses, é possível aplicar técnicas de mitigação (como o R
 
 No notebook, você encontrará exemplos de como calcular as seguintes métricas de fairness usando AIF360:
 
-Disparate Impact: Mede o impacto desproporcional de um modelo em diferentes grupos.
-Statistical Parity: Compara as taxas de resultados positivos entre grupos sensíveis.
-Equal Opportunity: Compara a taxa de verdadeiros positivos entre os grupos.
+- Disparate Impact: Mede o impacto desproporcional de um modelo em diferentes grupos.
+- Statistical Parity: Compara as taxas de resultados positivos entre grupos sensíveis.
+- Equal Opportunity: Compara a taxa de verdadeiros positivos entre os grupos.
 
 ## Licença
 
