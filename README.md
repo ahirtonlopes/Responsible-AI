@@ -12,7 +12,7 @@ A base de dados COMPAS (Correctional Offender Management Profiling for Alternati
 
 ## Passos do Exemplo
 
-- Carregamento e preparação dos dados:
+- Carregando e preparando os dados:
 
 O exemplo começa com o carregamento da base de dados COMPAS.
 Realiza-se um pré-processamento, incluindo a conversão das variáveis categóricas em numéricas e a normalização das variáveis.
